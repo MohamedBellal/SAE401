@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profil Utilisateur</title>
+	<link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+	<div class="profile-container">
+		<div class="profile-header">
+			<img src="link.webp" alt="Profile Picture" class="profile-pic">
+			<div class="profile-info">
+				<h1>player1</h1>
+				<button onclick="location.href='public_profile.html'">Accéder à mon profile public</button>
+			</div>
+			<div class="wallet-info">
+				<h2>Porte-monnaie</h2>
+				<p>Jeton</p>
+			</div>
+		</div>
+		<div class="profile-body">
+			<button onclick="location.href='annonces.html'">Annonces</button>
+			<button onclick="location.href='dashboard.html'">Tableau de bord</button>
+			<button onclick="location.href='settings.html'">Paramètres</button>
+		</div>
+		<button onclick="location.href='logout.html'" class="logout-button">Se déconnecter</button>
+	</div>
+	<script src="profile.js"></script>
+</body>
+
+</html>

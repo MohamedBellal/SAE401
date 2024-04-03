@@ -1,0 +1,96 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+}
+
+.page-container {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100vh;
+	/* Make the container fill the height of the viewport */
+}
+
+.filters-section {
+	flex: 0 0 30%;
+	/* Fixed width for the filters section */
+	padding: 20px;
+	overflow-y: auto;
+	/* Scroll if content is taller than the screen */
+	border-right: 1px solid black;
+	/* Separator line */
+}
+
+.separator {
+	display: none;
+	/* Remove if using a border as a separator */
+}
+
+.products-section {
+	flex: 0 0 70%;
+	/* Remaining width for the products section */
+	padding: 20px;
+	overflow-y: auto;
+	/* Scroll if content is taller than the screen */
+}
+
+.product-card {
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.select-product {
+	margin-right: 20px;
+	/* Space between checkbox and image */
+}
+
+.product-image {
+	width: 100px;
+	/* Size of the product image */
+	margin-right: 20px;
+}
+
+.product-details {
+	flex: 1;
+	/* Take the remaining space */
+}
+
+.product-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.product-delete {
+	background-color: #ff6b6b;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 15px;
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	/* Make the button block to fill the container */
+	margin-top: 10px;
+}
+
+.product-delete:hover {
+	background-color: #ff5252;
+}
+
+/* Additional styles for the filter dropdowns */
+.filter label {
+	display: block;
+	margin-bottom: .5rem;
+}
+
+.filter select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 1rem;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}

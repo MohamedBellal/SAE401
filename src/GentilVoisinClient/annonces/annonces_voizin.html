@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Annonces Utilisateur</title>
+	<link rel="stylesheet" href="annonces_voizin.css">
+</head>
+
+<body>
+	<div class="page-container">
+		<aside class="filters-section">
+			<h2>Filtres:</h2>
+			<div class="filter distance">
+				<label for="distance">Distance</label>
+				<input type="range" id="distance" name="distance" min="0" max="200" value="50">
+			</div>
+			<div class="filter services">
+				<label for="services">Services</label>
+				<select id="services" name="services">
+					<option value="">Sélectionnez</option>
+					<option value="paysagisme">Paysagisme</option>
+					<option value="menuiserie">Menuiserie</option>
+					<option value="plomberie">Plomberie</option>
+					<option value="electricite">Electricité</option>
+					<option value="terrassement">Terrassement</option>
+					<option value="chauffagerie">Chauffagerie</option>
+					<option value="maconnerie">Maçonnerie</option>
+					<option value="peinture">Peinture</option>
+					<option value="demolition">Démolition</option>
+					<option value="batiment">Bâtiment</option>
+					<option value="toiture">Toiture</option>
+				</select>
+			</div>
+			<div class="filter material">
+				<label for="material">Matériel</label>
+				<select id="material" name="material">
+					<option value="">Sélectionnez</option>
+					<option value="tournevis">Tournevis</option>
+					<option value="truelle">Truelle</option>
+					<option value="marteau">Marteau</option>
+					<option value="niveau">Niveau à bulles</option>
+					<option value="scie">Scie circulaire</option>
+					<option value="perceuse">Perceuse sans fil</option>
+					<option value="pelle">Pelle</option>
+					<option value="serre">Serre-joint</option>
+					<option value="scie-main">Scie à main</option>
+					<option value="cle">Clé à molette</option>
+				</select>
+			</div>
+			<div class="filter category">
+				<label for="category">Catégorie</label>
+				<select id="category" name="category">
+					<option value="">Sélectionnez</option>
+					<option value="paysagisme">Paysagisme</option>
+					<option value="menuiserie">Menuiserie</option>
+					<option value="plomberie">Plomberie</option>
+					<option value="electricite">Electricité</option>
+					<option value="terrassement">Terrassement</option>
+					<option value="chauffagerie">Chauffagerie</option>
+					<option value="maconnerie">Maçonnerie</option>
+					<option value="peinture">Peinture</option>
+					<option value="demolition">Démolition</option>
+					<option value="batiment">Bâtiment</option>
+					<option value="toiture">Toiture</option>
+				</select>
+			</div>
+		</aside>
+		<div class="separator"></div>
+		<section class="products-section">
+			<!-- Product cards go here -->
+		</section>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
